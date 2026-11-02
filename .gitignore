@@ -1,0 +1,12 @@
+node_modules
+dist/
+.env
+*.log
+coverage/
+
+# Preserve reviewable test evidence.
+!docs/evidence/*.log
+
+# Internal implementation handoff notes (not project docs)
+implementation-result.md
+repair-result.md

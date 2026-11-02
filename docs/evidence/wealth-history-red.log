@@ -1,0 +1,71 @@
+TAP version 13
+# Subtest: fractional buys, sales, fees and external flows use exact cents
+ok 1 - fractional buys, sales, fees and external flows use exact cents
+  ---
+  duration_ms: 46.471506
+  type: 'test'
+  ...
+# Subtest: reject impossible and backdated histories, unsafe quantities and totals
+ok 2 - reject impossible and backdated histories, unsafe quantities and totals
+  ---
+  duration_ms: 4.754792
+  type: 'test'
+  ...
+# Subtest: dated balance sheet: zero, unknown, signs, archived accounts and void exclusion
+ok 3 - dated balance sheet: zero, unknown, signs, archived accounts and void exclusion
+  ---
+  duration_ms: 3.937828
+  type: 'test'
+  ...
+# Subtest: backdated sale rejects a later oversell and exact half-cent rounds up
+ok 4 - backdated sale rejects a later oversell and exact half-cent rounds up
+  ---
+  duration_ms: 2.087272
+  type: 'test'
+  ...
+# Subtest: net worth counts brokerage once and history only carries recorded values
+ok 5 - net worth counts brokerage once and history only carries recorded values
+  ---
+  duration_ms: 48.014657
+  type: 'test'
+  ...
+# Subtest: a safe current total cannot hide an unsafe historical snapshot
+not ok 6 - a safe current total cannot hide an unsafe historical snapshot
+  ---
+  duration_ms: 24.850736
+  type: 'test'
+  location: '/home/hermes/workspace/budgey-implementation/tests/wealth.test.ts:1:4084'
+  failureType: 'testCodeFailure'
+  error: |-
+    The input did not match the regular expression /safe range/. Input:
+    
+    'TypeError: validateWealth is not a function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+  actual:
+  error: 'validateWealth is not a function'
+  name: 'TypeError'
+  stack: |-
+    <anonymous> (/home/hermes/workspace/budgey-implementation/tests/wealth.test.ts:183:20)
+    getActual (node:assert:609:5)
+    Function.throws (node:assert:757:24)
+    TestContext.<anonymous> (/home/hermes/workspace/budgey-implementation/tests/wealth.test.ts:183:9)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  operator: 'throws'
+  stack: |-
+    TestContext.<anonymous> (/home/hermes/workspace/budgey-implementation/tests/wealth.test.ts:183:9)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+1..6
+# tests 6
+# suites 0
+# pass 5
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 180.787993

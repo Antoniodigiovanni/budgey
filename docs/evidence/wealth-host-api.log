@@ -1,0 +1,5 @@
+
+> budgey@0.1.0 test:wealth:api
+> node --import tsx tests/wealth-api.ts
+
+PASS wealth API: ownership validation, exact values, idempotency, missing prices, backdated rollback, budget isolation

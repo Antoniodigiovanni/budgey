@@ -1,0 +1,158 @@
+
+> budgey@0.1.0 test
+> node --import tsx --test tests/*.test.ts tests/*.test.tsx
+
+TAP version 13
+# Subtest: HTTP identity, setup, retry conflict, transaction and atomic import flow
+ok 1 - HTTP identity, setup, retry conflict, transaction and atomic import flow
+  ---
+  duration_ms: 1345.067466
+  type: 'test'
+  ...
+# Subtest: exact minor units: negatives, decimal locales and invalid precision
+ok 2 - exact minor units: negatives, decimal locales and invalid precision
+  ---
+  duration_ms: 11.131573
+  type: 'test'
+  ...
+# Subtest: canonical payload hashes ignore key order and preserve array order
+ok 3 - canonical payload hashes ignore key order and preserve array order
+  ---
+  duration_ms: 5.617994
+  type: 'test'
+  ...
+# Subtest: envelopes preserve deficits and apply rollover
+ok 4 - envelopes preserve deficits and apply rollover
+  ---
+  duration_ms: 1.031943
+  type: 'test'
+  ...
+# Subtest: trusted identity fails closed and development identity cannot enable production
+ok 5 - trusted identity fails closed and development identity cannot enable production
+  ---
+  duration_ms: 4.074005
+  type: 'test'
+  ...
+# Subtest: income, splits, refunds and card payment count correctly; advisory target permits overruns
+ok 6 - income, splits, refunds and card payment count correctly; advisory target permits overruns
+  ---
+  duration_ms: 6.010088
+  type: 'test'
+  ...
+# Subtest: rollover across years and monthly reset release unspent funds without rewriting history
+ok 7 - rollover across years and monthly reset release unspent funds without rewriting history
+  ---
+  duration_ms: 3.256117
+  type: 'test'
+  ...
+# Subtest: negative reset envelope releases a deficit, future activity and voids do not affect current funds
+ok 8 - negative reset envelope releases a deficit, future activity and voids do not affect current funds
+  ---
+  duration_ms: 1.778842
+  type: 'test'
+  ...
+# Subtest: CSV export neutralizes spreadsheet formulas and preserves actual numeric minor units
+ok 9 - CSV export neutralizes spreadsheet formulas and preserves actual numeric minor units
+  ---
+  duration_ms: 56.953337
+  type: 'test'
+  ...
+# Subtest: CSV quoting, BOM, blank IDs, row numbers, UTF-8 and exact cents
+ok 10 - CSV quoting, BOM, blank IDs, row numbers, UTF-8 and exact cents
+  ---
+  duration_ms: 48.613373
+  type: 'test'
+  ...
+# Subtest: localized dates, debit-credit and currency mismatch
+ok 11 - localized dates, debit-credit and currency mismatch
+  ---
+  duration_ms: 11.499079
+  type: 'test'
+  ...
+# Subtest: malformed amounts remain review errors and duplicate fingerprints do not discard rows
+ok 12 - malformed amounts remain review errors and duplicate fingerprints do not discard rows
+  ---
+  duration_ms: 8.423478
+  type: 'test'
+  ...
+# Subtest: transaction split validation and transfer pairing inputs
+ok 13 - transaction split validation and transfer pairing inputs
+  ---
+  duration_ms: 27.950728
+  type: 'test'
+  ...
+# Subtest: PostgreSQL constraints, atomic rollback, stable IDs and retry concurrency
+ok 14 - PostgreSQL constraints, atomic rollback, stable IDs and retry concurrency
+  ---
+  duration_ms: 790.389328
+  type: 'test'
+  ...
+# Subtest: empty production household renders real zero balances and onboarding actions without sample data
+ok 15 - empty production household renders real zero balances and onboarding actions without sample data
+  ---
+  duration_ms: 171.704876
+  type: 'test'
+  ...
+# Subtest: wealth persistence, ownership, immutable records, audit and rollback
+ok 16 - wealth persistence, ownership, immutable records, audit and rollback
+  ---
+  duration_ms: 958.901514
+  type: 'test'
+  ...
+# Subtest: direct database event inserts enforce full cash and unit timelines
+ok 17 - direct database event inserts enforce full cash and unit timelines
+  ---
+  duration_ms: 437.676485
+  type: 'test'
+  ...
+# Subtest: fractional buys, sales, fees and external flows use exact cents
+ok 18 - fractional buys, sales, fees and external flows use exact cents
+  ---
+  duration_ms: 43.217033
+  type: 'test'
+  ...
+# Subtest: reject impossible and backdated histories, unsafe quantities and totals
+ok 19 - reject impossible and backdated histories, unsafe quantities and totals
+  ---
+  duration_ms: 4.281621
+  type: 'test'
+  ...
+# Subtest: dated balance sheet: zero, unknown, signs, archived accounts and void exclusion
+ok 20 - dated balance sheet: zero, unknown, signs, archived accounts and void exclusion
+  ---
+  duration_ms: 3.936816
+  type: 'test'
+  ...
+# Subtest: backdated sale rejects a later oversell and exact half-cent rounds up
+ok 21 - backdated sale rejects a later oversell and exact half-cent rounds up
+  ---
+  duration_ms: 2.000858
+  type: 'test'
+  ...
+# Subtest: net worth counts brokerage once and history only carries recorded values
+ok 22 - net worth counts brokerage once and history only carries recorded values
+  ---
+  duration_ms: 49.853456
+  type: 'test'
+  ...
+# Subtest: a safe current total cannot hide an unsafe historical snapshot
+ok 23 - a safe current total cannot hide an unsafe historical snapshot
+  ---
+  duration_ms: 14.601743
+  type: 'test'
+  ...
+# Subtest: currency display preserves cents even at safe integer limits
+ok 24 - currency display preserves cents even at safe integer limits
+  ---
+  duration_ms: 43.708154
+  type: 'test'
+  ...
+1..24
+# tests 24
+# suites 0
+# pass 24
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 18482.870371

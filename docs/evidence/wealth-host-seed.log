@@ -1,0 +1,5 @@
+
+> budgey@0.1.0 seed:wealth
+> node --import tsx scripts/seed-wealth-demo.ts
+
+Fictional wealth seed applied

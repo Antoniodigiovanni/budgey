@@ -1,0 +1,19 @@
+
+> budgey@0.1.0 migrate
+> node --import tsx server/migrate.ts
+
+/home/hermes/workspace/budgey/node_modules/pg-pool/index.js:45
+    Error.captureStackTrace(err)
+          ^
+
+Error: connect EPERM /home/hermes/workspace/budgey-demo/socket/.s.PGSQL.55432
+    at /home/hermes/workspace/budgey/node_modules/pg-pool/index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async <anonymous> (/home/hermes/workspace/budgey-implementation/server/migrate.ts:3:11) {
+  errno: -1,
+  code: 'EPERM',
+  syscall: 'connect',
+  address: '/home/hermes/workspace/budgey-demo/socket/.s.PGSQL.55432'
+}
+
+Node.js v22.22.1

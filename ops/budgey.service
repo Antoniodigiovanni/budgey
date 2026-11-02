@@ -1,0 +1,21 @@
+[Unit]
+Description=Budgey household envelope budget
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/workspace/budgey
+EnvironmentFile=%h/workspace/budgey/.env
+Environment=NODE_ENV=production
+ExecStart=/usr/bin/node %h/workspace/budgey/dist/server.js
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=30
+NoNewPrivileges=true
+PrivateTmp=true
+UMask=0077
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=default.target

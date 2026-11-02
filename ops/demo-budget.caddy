@@ -1,0 +1,9 @@
+budget.antovanni.com {
+    route {
+        import cloudflare_access_gate
+        reverse_proxy 127.0.0.1:3100 {
+            # Map authenticated visitors to the fictional shared demo only.
+            header_up X-Hermes-Verified-Email demo@example.com
+        }
+    }
+}

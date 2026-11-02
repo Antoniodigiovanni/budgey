@@ -1,0 +1,7 @@
+
+> budgey@0.1.0 migrate
+> node --import tsx server/migrate.ts
+
+Applied 001_initial.sql
+Applied 002_ledger_guards.sql
+Applied 003_wealth.sql

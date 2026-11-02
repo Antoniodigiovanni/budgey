@@ -1,0 +1,7 @@
+PASS wealth-host-migrate
+PASS wealth-host-all-tests
+PASS wealth-host-api
+PASS wealth-host-seed
+PASS wealth-host-seed-replay
+PASS wealth-host-browser
+All host acceptance checks passed; screenshots and logs are in docs/evidence.

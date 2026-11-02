@@ -1,0 +1,46 @@
+[
+  {
+    "name": "missing valuation is explicit",
+    "pass": true
+  },
+  {
+    "name": "created named asset persisted",
+    "pass": true
+  },
+  {
+    "name": "exact valuation survives reload",
+    "pass": true
+  },
+  {
+    "name": "as-of excludes later value",
+    "pass": true
+  },
+  {
+    "name": "missing security price visible",
+    "pass": true
+  },
+  {
+    "name": "fractional holding exact value",
+    "pass": true
+  },
+  {
+    "name": "field validation retains draft",
+    "pass": true
+  },
+  {
+    "name": "one saved trade after rejected oversell",
+    "pass": true
+  },
+  {
+    "name": "desktop fits 1280px",
+    "pass": true
+  },
+  {
+    "name": "Balance sheet fits 390px",
+    "pass": true
+  },
+  {
+    "name": "Investments fits 390px",
+    "pass": true
+  }
+]

@@ -1,0 +1,14 @@
+Budgey listening on http://127.0.0.1:3102
+{"event":"request-failed","id":"e721e4fc-3331-41d9-8620-34e294cdb64f","code":"validation","status":400}
+{"event":"request-failed","id":"c2407807-69de-499a-a3d1-98f304500b4a","code":"validation","status":400}
+{"event":"request-failed","id":"8fe4a1c3-4085-43c7-8d05-c453f96cb8db","code":"validation","status":400}
+{"event":"request-failed","id":"da6736be-526e-498c-9e47-8e55de19c7ce","code":"validation","status":400}
+{"event":"request-failed","id":"df018291-6b0d-43a8-be35-38bc65577ed9","code":"validation","status":400}
+{"event":"request-failed","id":"403a51be-fc3f-42c1-8c78-6855070cec50","code":"validation","status":400}
+{"event":"request-failed","id":"840c507f-8347-4a7f-8311-afb338ac4bca","code":"validation","status":400}
+{"event":"request-failed","id":"445b889a-12bb-4635-bf84-981e5dda1d64","code":"validation","status":400}
+{"event":"request-failed","id":"790137b1-5698-40d9-8126-2dba7f09574e","code":"validation","status":400}
+{"event":"request-failed","id":"d67fa85b-e949-42a7-b6ac-d51cf03f4cd7","code":"validation","status":400}
+{"event":"request-failed","id":"46a941ee-7c03-4856-9a60-02bbb7d5e63c","code":"validation","status":400}
+{"event":"request-failed","id":"25cb26ce-acbb-42fa-b464-c8a8488ac0ec","code":"validation","status":400}
+{"event":"request-failed","id":"9eb2877f-91ed-4e58-b71d-ef45bcc1cba0","code":"validation","status":400}
